@@ -1,0 +1,145 @@
+/*#
+@colors&{"titlesAccentColor":"#494949","labelsAccentColor":"#7b7a7a","linksAccentColor":"#2372de","backgroundAccentColor":"#dce5f2","isDefault":true}&colors@
+@info@STYLES BASKET SELECTIONS METADATA@info@
+@name&styles_basket&name@
+@aspects&wh-tiles,wh-search-component-colors-labels,wh-search-component-background-color-dark,wh-tiles-themes-titles-and-link-bg,theme-fonts-arial,between-lines-medium,titles-borders-underlined,titles-borders-width-medium,titles-color-black-white,notes-style-borders-box,notes-colors-colorful&aspects@
+@info@WARNING: PLEASE DON'T MODIFY THIS FILE. MODIFICATION CAN CAUSE UPLOADING ERRORS@info@
+@info@TIP: YOU CAN USE custom.css TO ADD CUSTOM SELECTORS.@info@
+#*/
+/* Bold selection in Publication TOC. WebHelp only. */
+@media screen {
+  .wh_publication_toc .active > .topicref a {
+    font-weight: bold;
+  }
+}
+/*theme-fonts-arial*/
+@page {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+.topictitle1,
+.topictitle2,
+*[class~='front-page/front-page-title'],
+*[class~="toc/title"],
+*[class~='topic/title'],
+*[class~='topic/thead'],
+*[class~="placeholder/figurelist"],
+*[class~="placeholder/tablelist"],
+*[class~="index/groups"]::before,
+*[class~="index/group"] > *[class~="index/label"],
+.wh_publication_title,
+.wh_top_menu,
+.wh_tile_title .topicref,
+.wh_main_page_toc_entry .topicref,
+.wh_index_terms span.wh_first_letter,
+.wh-letters li a {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+*[class~="map/topicref"] {
+  font-family: 'Arial', sans-serif;
+}
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6 {
+  font-family: 'Arial', sans-serif;
+}
+body {
+  font-family: 'Arial', sans-serif;
+}
+/*between-lines-medium*/
+*[class~='topic/topic'],
+*[class~='topic/body'],
+*[class~='topic/title'] {
+  line-height: 1.4;
+}
+/*titles-borders-underlined*/
+.topictitle1,
+.topictitle2:not(*[class ~= "glossentry/glossterm"]),
+*[class~="toc/title"],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  border-bottom: 1px solid;
+  padding-bottom: 0.25em;
+}
+/*titles-borders-width-medium*/
+.topictitle1,
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6,
+*[class~="toc/title"],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  border-width: medium !important;
+}
+/*titles-color-black-white*/
+.topictitle1,
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6,
+*[class~="toc/title"],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  color: unset;
+}
+/*notes-style-borders-box*/
+*[class~="topic/note"]:not([class~="hazard-d/hazardstatement"]) {
+  border: 1px solid;
+  border-radius: 11px;
+}
+/*notes-colors-colorful*/
+*[class~="topic/note"]:not([class~="hazard-d/hazardstatement"]) {
+  background-color: rgba(0, 120, 160, 0.09);
+  border-color: #0078A0;
+}
+*[class~="topic/note"].note_danger,
+*[class~="topic/note"].note_caution {
+  background-color: rgba(255, 202, 45, 0.1);
+  border-color: #606060;
+}
+*[class~="topic/note"].note_warning,
+*[class~="topic/note"].note_attention,
+*[class~="topic/note"].note_important {
+  background-color: rgba(255, 202, 45, 0.1);
+  border-color: #FFCA2D;
+}
+*[class~="topic/note"].note_restriction {
+  background-color: rgba(255, 226, 225, 0.32);
+  border-color: #FF342D;
+}
+/*wh-tiles*/
+/*wh-tiles-themes-titles-and-link-bg*/
+.wh_tile {
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.wh_tile_title {
+  text-align: center;
+  font-size: 1.5em;
+}
+.wh_tile_title a {
+  color: #0000ee;
+}
+.wh_tile_shortdesc {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: #000000;
+}
+/*wh-search-component-colors-labels*/
+.wh_search_button {
+  background-color: #000000;
+}
+/*wh-search-component-background-color-dark*/
+.wh_search_input {
+  background-color: #cccccc;
+}
+

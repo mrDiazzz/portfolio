@@ -253,7 +253,7 @@
                                     <String>${cfd}</String>
                                 </field>
                                 <field name="outputDir">
-                                    <String>${cfd}/out/webhelp-responsive</String>
+                                    <String>${cfd}/docs</String>
                                 </field>
                                 <field name="tempDir">
                                     <String>${cfd}/temp/webhelp-responsive</String>
@@ -273,7 +273,7 @@
                                             <null/>
                                         </field>
                                         <field name="ditavalFilePath">
-                                            <String></String>
+                                            <null/>
                                         </field>
                                         <field name="simpleFiltersList">
                                             <list/>
@@ -290,7 +290,17 @@
                                     <null/>
                                 </field>
                                 <field name="publishingTemplateDataPO">
-                                    <null/>
+                                    <publishingTemplate>
+                                        <field name="templateRoot">
+                                            <String>C:\Users\emmdia\Downloads\styles (5).zip</String>
+                                        </field>
+                                        <field name="descriptorRelativePath">
+                                            <String>styles.opt</String>
+                                        </field>
+                                        <field name="isCustomTemplate">
+                                            <Boolean>true</Boolean>
+                                        </field>
+                                    </publishingTemplate>
                                 </field>
                                 <field name="oxygenFeedbackPO">
                                     <null/>
@@ -331,29 +341,6 @@
                                                 <String-array>
                                                     <String></String>
                                                 </String-array>
-                                            </field>
-                                        </ditaParameter>
-                                        <ditaParameter>
-                                            <field name="name">
-                                                <String>webhelp.logo.image</String>
-                                            </field>
-                                            <field name="description">
-                                                <null/>
-                                            </field>
-                                            <field name="value">
-                                                <String>${pd}/images/talk_logo.png</String>
-                                            </field>
-                                            <field name="defaultValue">
-                                                <null/>
-                                            </field>
-                                            <field name="type">
-                                                <Integer>2</Integer>
-                                            </field>
-                                            <field name="possibleValues">
-                                                <null/>
-                                            </field>
-                                            <field name="possibleValuesDescriptions">
-                                                <null/>
                                             </field>
                                         </ditaParameter>
                                         <ditaParameter>
