@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="18.1">
+<project>
     <meta>
         <filters directoryPatterns="" filePatterns="talking-circle.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="18.1" xml:space="preserve">
+            <serialized xml:space="preserve">
                 <serializableOrderedMap>
+                    <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
                     <entry>
                         <String>scenario.associations</String>
                         <scenarioAssociation-array>
@@ -22,6 +26,11 @@
                                         <String>DITAMAP</String>
                                     </list>
                                 </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
                             </scenarioAssociation>
                         </scenarioAssociation-array>
                     </entry>
@@ -33,6 +42,9 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="useAntennaHouse">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useDITAScript">
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="baseDir">
@@ -75,7 +87,10 @@
                                 <field name="lastCustomSkinCssPath">
                                     <null/>
                                 </field>
-                                <field name="webhelpResponsiveTemplate">
+                                <field name="publishingTemplateDataPO">
+                                    <null/>
+                                </field>
+                                <field name="oxygenFeedbackPO">
                                     <null/>
                                 </field>
                                 <field name="additionalAntArgs">
@@ -184,9 +199,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -234,6 +246,9 @@
                                 <field name="useAntennaHouse">
                                     <Boolean>false</Boolean>
                                 </field>
+                                <field name="useDITAScript">
+                                    <Boolean>false</Boolean>
+                                </field>
                                 <field name="baseDir">
                                     <String>${cfd}</String>
                                 </field>
@@ -274,21 +289,11 @@
                                 <field name="lastCustomSkinCssPath">
                                     <null/>
                                 </field>
-                                <field name="webhelpResponsiveTemplate">
-                                    <webhelpTemplate>
-                                        <field name="templateName">
-                                            <String>bootstrap</String>
-                                        </field>
-                                        <field name="variantName">
-                                            <String>tiles</String>
-                                        </field>
-                                        <field name="skinName">
-                                            <String>aquamarine</String>
-                                        </field>
-                                        <field name="customSkinPath">
-                                            <null/>
-                                        </field>
-                                    </webhelpTemplate>
+                                <field name="publishingTemplateDataPO">
+                                    <null/>
+                                </field>
+                                <field name="oxygenFeedbackPO">
+                                    <null/>
                                 </field>
                                 <field name="additionalAntArgs">
                                     <String></String>
@@ -446,9 +451,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>true</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -495,7 +497,10 @@
             </serialized>
         </options>
     </meta>
-    <projectTree name="talking-circle.xpr">
+    <projectTree name="sample.xpr">
+        <folder masterFiles="true" name="Main Files">
+            <file name="talking-circle.ditamap"/>
+        </folder>
         <folder path="."/>
     </projectTree>
 </project>
